@@ -33,9 +33,9 @@ public class Gun : MonoBehaviour
     }
     public void Shoot()
     {
-        if(gunData.currentAmmo > 0)
+        if (gunData.currentAmmo > 0)
         {
-            if(CanShoot())
+            if (CanShoot())
             {
                 if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hitInfo, gunData.maxDistance))
                 {

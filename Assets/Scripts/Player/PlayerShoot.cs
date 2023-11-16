@@ -11,6 +11,8 @@ public class PlayerShoot : MonoBehaviour
     {
         if(Input.GetMouseButton(0))
         {
+            if (shootInput == null)
+                Debug.Log("NULLLLLL APRENDE A PROGRAMAR BURROOOOO");
             shootInput?.Invoke();
         }
         if(Input.GetKeyDown(KeyCode.R))

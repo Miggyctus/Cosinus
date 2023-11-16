@@ -15,7 +15,7 @@ C:/Users/mayal/Desktop/Unity Projects/Cosinus
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52323
+50166
 Successfully changed project path to: C:/Users/mayal/Desktop/Unity Projects/Cosinus
 C:/Users/mayal/Desktop/Unity Projects/Cosinus
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/mayal/Desktop/Unity Projects/Cosinus
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3680] Host "[IP] 192.168.0.144 [Port] 0 [Flags] 2 [Guid] 4233739604 [EditorId] 4233739604 [Version] 1048832 [Id] WindowsEditor(7,Miggyctus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27444] Host "[IP] 192.168.1.167 [Port] 0 [Flags] 2 [Guid] 3523122598 [EditorId] 3523122598 [Version] 1048832 [Id] WindowsEditor(7,Miggyctus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3680] Host "[IP] 192.168.0.144 [Port] 0 [Flags] 2 [Guid] 4233739604 [EditorId] 4233739604 [Version] 1048832 [Id] WindowsEditor(7,Miggyctus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27444] Host "[IP] 192.168.1.167 [Port] 0 [Flags] 2 [Guid] 3523122598 [EditorId] 3523122598 [Version] 1048832 [Id] WindowsEditor(7,Miggyctus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 27.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.4f1 (35713cd46cd7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009779 seconds.
-- Loaded All Assemblies, in  0.363 seconds
+Registered in 0.016144 seconds.
+- Loaded All Assemblies, in  0.545 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.270 seconds
-Domain Reload Profiling: 629ms
-	BeginReloadAssembly (106ms)
+- Finished resetting the current domain, in  0.413 seconds
+Domain Reload Profiling: 952ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (144ms)
-		LoadAssemblies (103ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (213ms)
+		LoadAssemblies (139ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (134ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (119ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (194ms)
+				TypeCache.ScanAssembly (177ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (270ms)
+	FinalizeReload (414ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (207ms)
+		SetupLoadedEditorAssemblies (323ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (137ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,51 +116,51 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\mayal\Desktop\Unity Projects\Cosinus\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\mayal\Desktop\Unity Projects\Cosinus\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.811 seconds
-Refreshing native plugins compatible for Editor in 8.44 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.291 seconds
+Refreshing native plugins compatible for Editor in 14.24 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.578 seconds
-Domain Reload Profiling: 1383ms
-	BeginReloadAssembly (125ms)
+- Finished resetting the current domain, in  0.961 seconds
+Domain Reload Profiling: 2244ms
+	BeginReloadAssembly (222ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (602ms)
-		LoadAssemblies (340ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (911ms)
+		LoadAssemblies (587ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (315ms)
-			TypeCache.Refresh (297ms)
-				TypeCache.ScanAssembly (284ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (578ms)
+		AnalyzeDomain (426ms)
+			TypeCache.Refresh (399ms)
+				TypeCache.ScanAssembly (385ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (962ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (446ms)
+		SetupLoadedEditorAssemblies (744ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (337ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (563ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (20ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 8.57 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 13.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3540 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (63.4 KB). Loaded Objects now: 3994.
+Unloading 3541 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (63.0 KB). Loaded Objects now: 3995.
 Memory consumption went from 129.8 MB to 129.7 MB.
-Total: 3.376500 ms (FindLiveObjects: 0.254600 ms CreateObjectMapping: 0.214900 ms MarkObjects: 2.792200 ms  DeleteObjects: 0.114000 ms)
+Total: 4.644100 ms (FindLiveObjects: 0.326300 ms CreateObjectMapping: 0.175100 ms MarkObjects: 3.968300 ms  DeleteObjects: 0.172800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -176,46 +176,159 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 19940.107409 seconds.
-  path: Assets/Art
-  artifactKey: Guid(fa9709f88d4b93249b296842db653970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art using Guid(fa9709f88d4b93249b296842db653970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b7f5e22e191ba8785164f5c8a99a2e') in 0.002469 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.397226 seconds.
-  path: Assets/Art/HealthBar
-  artifactKey: Guid(8e9f2aac938b0a74aa0d72efbe529149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/HealthBar using Guid(8e9f2aac938b0a74aa0d72efbe529149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04375080650869ad9851887ac820b90d') in 0.000630 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 61.590838 seconds.
-  path: Assets/Art/HealthBar/BACK_HealthBar.png
-  artifactKey: Guid(5cc43d944a9077e4bb48726025a1c6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/HealthBar/BACK_HealthBar.png using Guid(5cc43d944a9077e4bb48726025a1c6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33bbdb218d482690471ca4eb0e1d1ce') in 0.051993 seconds
+  Time since last request: 2771.873648 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Gun_MAT.mat
+  artifactKey: Guid(28f0b13c7e9707746b5e0b3336181560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Gun_MAT.mat using Guid(28f0b13c7e9707746b5e0b3336181560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204492503c6a74440892051c633afb50') in 0.296874 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Art/HealthBar/FRONT_XpBar.png
-  artifactKey: Guid(d274b3d08dda6bb43a3def087e344f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/HealthBar/FRONT_XpBar.png using Guid(d274b3d08dda6bb43a3def087e344f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e854382edfabdb43adec76d68f16448') in 0.017551 seconds
+  Time since last request: 1.652495 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/AK74.fbx
+  artifactKey: Guid(6f966b9a7c817ed49973b4a8762cbbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/AK74.fbx using Guid(6f966b9a7c817ed49973b4a8762cbbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '189eebe8eb1781c80afc26067a315e6e') in 0.127256 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Art/HealthBar/FRONT_HealthBar.png
-  artifactKey: Guid(506c1275fbcf6aa4aa75dc9cacec364f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/HealthBar/FRONT_HealthBar.png using Guid(506c1275fbcf6aa4aa75dc9cacec364f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b1c95675a9d8543bead879a87291aa') in 0.010297 seconds
+  Time since last request: 0.000022 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/RPG7.fbx
+  artifactKey: Guid(4e5ce0b6f97fdbc40b7bc818b06b80ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/RPG7.fbx using Guid(4e5ce0b6f97fdbc40b7bc818b06b80ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96aab4a6d63c98e78b18e8916dd61568') in 0.052844 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/M4_8.fbx
+  artifactKey: Guid(c7741850eebe1df4ea75a80275b16311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/M4_8.fbx using Guid(c7741850eebe1df4ea75a80275b16311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a11456da43899c78ab2728c1a380d0c') in 0.117124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/Flash.fbx
+  artifactKey: Guid(0463b32f3348438449af40d60686807b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/Flash.fbx using Guid(0463b32f3348438449af40d60686807b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3490d555bdaccda21abf35da3fd087c') in 0.046125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/Bennelli_M4.fbx
+  artifactKey: Guid(bf2593fe0c804b84688e307cfb1ddfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/Bennelli_M4.fbx using Guid(bf2593fe0c804b84688e307cfb1ddfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ee5318f5a39249ae2b5eac235980e1') in 0.065647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/M107.fbx
+  artifactKey: Guid(a0e70037533056249a1bcaf8b480c5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/M107.fbx using Guid(a0e70037533056249a1bcaf8b480c5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee4894c6673c77a455e4461622166c8') in 0.058304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/ELCAN.fbx
+  artifactKey: Guid(7430c7a2877dd0b429a981e69ac2ed00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/ELCAN.fbx using Guid(7430c7a2877dd0b429a981e69ac2ed00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f5d997055267e66d5e3a47267e1a20') in 0.029374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/TAN_LR_Scope_01.fbx
+  artifactKey: Guid(2bbc7effaf5e34b4e9358a6c93bb1382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/TAN_LR_Scope_01.fbx using Guid(2bbc7effaf5e34b4e9358a6c93bb1382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca8be9422652ff13def713731ffbf2c') in 0.044574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/ANPEQ15.prefab
+  artifactKey: Guid(0c4a58b408c72d141bb4ae5633ef3744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/ANPEQ15.prefab using Guid(0c4a58b408c72d141bb4ae5633ef3744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02392d6030a538cac3fdcd56328ec02') in 0.022439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/Uzi.prefab
+  artifactKey: Guid(6273e2936e9d6a24e9f64c7c70d6bd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/Uzi.prefab using Guid(6273e2936e9d6a24e9f64c7c70d6bd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a489e229ef827adc77908239522824c') in 0.021761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/TAN_LR_Scope_01.prefab
+  artifactKey: Guid(49535f27af2648646a94c1f9918737d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/TAN_LR_Scope_01.prefab using Guid(49535f27af2648646a94c1f9918737d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a2499c4e9870a6e4f40e00702ad260') in 0.017995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/Smoke.prefab
+  artifactKey: Guid(8b4cba336c093ff41ae9321f9f8433d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/Smoke.prefab using Guid(8b4cba336c093ff41ae9321f9f8433d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6499e58d435f52eddcbb1eea6e875bd6') in 0.021930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/M107.prefab
+  artifactKey: Guid(7359baf27e84aa44cafac3788c8be0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/M107.prefab using Guid(7359baf27e84aa44cafac3788c8be0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362614c209637208bfc8097928f77d66') in 0.019965 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/Bennelli_M4.prefab
+  artifactKey: Guid(8b0b86b42def11849a8eba21f4a6a684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/Bennelli_M4.prefab using Guid(8b0b86b42def11849a8eba21f4a6a684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec6b0699b30589358ef8d2f9f2647bf') in 0.021735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/AK74.prefab
+  artifactKey: Guid(ee329c3cd08e58645834d20702d7f6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/AK74.prefab using Guid(ee329c3cd08e58645834d20702d7f6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63f22708e3892eda14267c9bffaa977') in 0.021923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/M249.prefab
+  artifactKey: Guid(432643b6e5110004083fdff3e33e490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/M249.prefab using Guid(432643b6e5110004083fdff3e33e490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7b42d9805b57a95ea10c25684782f6') in 0.040620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Prefabs/ELCAN.prefab
+  artifactKey: Guid(75aeffeed5a736f46afbef3a42e93fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Prefabs/ELCAN.prefab using Guid(75aeffeed5a736f46afbef3a42e93fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291f644d4c3926f02f7c5a07686a2682') in 0.028911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Models/M1911.fbx
+  artifactKey: Guid(b812e42521a5a27499e76cc5ed56e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Models/M1911.fbx using Guid(b812e42521a5a27499e76cc5ed56e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1dba60298a421b401e531122b45f8f6') in 0.056077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

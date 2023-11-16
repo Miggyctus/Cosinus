@@ -15,6 +15,6 @@ public class GunData : ScriptableObject
     public int magSize;
     public float fireRate;
     public float reloadTime;
-    [HideInInspector]
+
     public bool reloading;
 }
