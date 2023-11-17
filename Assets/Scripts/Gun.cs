@@ -6,7 +6,7 @@ public class Gun : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] GunData gunData;
-    
+    public Transform gunBarrel;
     float timeSinceLastShot;
     private void Start()
     {
@@ -37,11 +37,13 @@ public class Gun : MonoBehaviour
         {
             if (CanShoot())
             {
-                if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hitInfo, gunData.maxDistance))
-                {
-                    IDamageable damageable = hitInfo.transform.GetComponent<IDamageable>();
-                    damageable?.TakeDamage(gunData.damage);
-                }
+                Transform cam = GetComponentInParent<Camera>().transform;
+                //instantiate new bullet
+                GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Bullet") as GameObject, gunBarrel.position, transform.rotation);
+                //calculate the direction to the player
+                Vector3 shootDirection = cam.forward;
+                //add force to rigidbody of the bullet
+                bullet.GetComponent<Rigidbody>().velocity = shootDirection * 40;
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
                 OnGunShot();
