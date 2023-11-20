@@ -370,6 +370,8 @@
 "Assets/Scripts/Enemy/States/PatrolState.cs"
 "Assets/Scripts/Enemy/States/SearchState.cs"
 "Assets/Scripts/Flashbang/flashbangLogic.cs"
+"Assets/Scripts/GameOverScreen.cs"
+"Assets/Scripts/GenerateEnemy.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/Interactable.cs"

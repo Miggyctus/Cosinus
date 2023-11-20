@@ -27,11 +27,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private string currentState;
     void Start()
     {
+        path = GameObject.Find("Path").GetComponent<Path>();
         stateMachine = GetComponent<StateMachine>();
         agent = GetComponent<NavMeshAgent>();
         enemyTarget = GetComponent<Target>();
         currentHealth = enemyTarget.health;
         stateMachine.Initialise();
+
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -42,6 +44,7 @@ public class Enemy : MonoBehaviour
         if(enemyTarget.TookDamage())
         {
             transform.LookAt(player.transform);
+            enemyTarget.setDamaged(false);
         }
     }
     public bool CanSeePlayer()

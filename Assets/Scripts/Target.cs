@@ -19,4 +19,9 @@ public class Target : MonoBehaviour, IDamageable
     {
         return damaged;
     }
+
+    public void setDamaged(bool Damaged)
+    {
+        damaged = Damaged;
+    }
 }
