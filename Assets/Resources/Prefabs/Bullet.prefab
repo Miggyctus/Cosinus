@@ -118,7 +118,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439125308648750429}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -149,6 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbc38ee99b335943b2bd14bcfe1ecef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunDataPlayer: {fileID: 11400000, guid: 8e99d406a7ac16e4fab219f63a875a10, type: 2}
+  gunDataEnemy: {fileID: 11400000, guid: 7366a75e0f4983046ba7e65c91d7bd37, type: 2}
 --- !u!96 &5226816576940866171
 TrailRenderer:
   serializedVersion: 3

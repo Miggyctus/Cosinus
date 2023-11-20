@@ -8,8 +8,12 @@ public class Enemy : MonoBehaviour
     private StateMachine stateMachine;
     private NavMeshAgent agent;
     private GameObject player;
+    private Vector3 lastKnownPos;
+    private Target enemyTarget;
     public NavMeshAgent Agent { get => agent; }
     public GameObject Player { get => player; }
+    public Vector3 LastKnownPos { get => lastKnownPos; set => lastKnownPos = value; }
+    private float currentHealth; 
     public Path path;
     [Header("Sight Values")]
     public float sightDistance = 20f;
@@ -25,6 +29,8 @@ public class Enemy : MonoBehaviour
     {
         stateMachine = GetComponent<StateMachine>();
         agent = GetComponent<NavMeshAgent>();
+        enemyTarget = GetComponent<Target>();
+        currentHealth = enemyTarget.health;
         stateMachine.Initialise();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -33,6 +39,10 @@ public class Enemy : MonoBehaviour
     {
         CanSeePlayer();
         currentState = stateMachine.activeState.ToString();
+        if(enemyTarget.TookDamage())
+        {
+            transform.LookAt(player.transform);
+        }
     }
     public bool CanSeePlayer()
     {

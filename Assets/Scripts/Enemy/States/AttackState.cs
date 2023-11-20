@@ -29,19 +29,20 @@ public class AttackState : BaseState
             {
                 Shoot();
             }
-            if(moveTimer > Random.Range(3, 7))
+            if(moveTimer > Random.Range(3, 5))
             {
                 enemy.Agent.SetDestination(enemy.transform.position + (Random.insideUnitSphere * 5));
                 moveTimer = 0;
             }
+            enemy.LastKnownPos = enemy.Player.transform.position;
         }
         else
         {
             losePlayerTimer += Time.deltaTime;
-            if(losePlayerTimer > 7)
+            if(losePlayerTimer > 5)
             {
                 //change to search state
-                stateMachine.ChangeState(new PatrolState());
+                stateMachine.ChangeState(new SearchState());
             }
         }
     }
