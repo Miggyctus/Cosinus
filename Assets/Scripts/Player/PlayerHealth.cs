@@ -5,12 +5,22 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
+
+
     private float health;
     private float lerpTimer;
     public float maxHealth = 100f;
     public float chipSpeed = 2f;
     public Image frontHealthBar;
     public Image backHealthBar;
+
+
+    [SerializeField] private float regenCooldown = 3.0f;
+    [SerializeField] private float maxHealCooldown = 3.0f;
+    [SerializeField] private bool startCD = false;
+    [SerializeField] private float regenRate = 0.2f;
+    private bool canRegen = false;
+
     void Start()
     {
         health = maxHealth;
@@ -21,13 +31,38 @@ public class PlayerHealth : MonoBehaviour
     {
         health = Mathf.Clamp(health, 0, maxHealth);
         UpdateHealthUI();
-        if(Input.GetKeyDown(KeyCode.I))
+        //if (Input.GetKeyDown(KeyCode.I))
+        //{
+        //    TakeDamage(Random.Range(5, 10));
+        //}
+        //if (Input.GetKeyDown(KeyCode.J))
+        //{
+        //    RestoreHealth(Random.Range(5, 10));
+        //}
+
+        if (startCD)
         {
-            TakeDamage(Random.Range(5, 10));
+            regenCooldown -= Time.deltaTime;
+            if (regenCooldown <= 0)
+            {
+                canRegen = true;
+                startCD = false;
+            }
         }
-        if(Input.GetKeyDown(KeyCode.J))
+
+        if (canRegen)
         {
-            RestoreHealth(Random.Range(5, 10));
+            if (health <= maxHealth - 0.01)
+            {
+                health += Time.deltaTime + regenRate;
+            }
+            else
+            {
+                health = maxHealth;
+                regenCooldown = maxHealCooldown;
+                canRegen = false;
+            }
+
         }
     }
     public void UpdateHealthUI()
@@ -36,7 +71,7 @@ public class PlayerHealth : MonoBehaviour
         float fillF = frontHealthBar.fillAmount;
         float fillB = backHealthBar.fillAmount;
         float hFraction = health / maxHealth;
-        if(fillB > hFraction)
+        if (fillB > hFraction)
         {
             frontHealthBar.fillAmount = hFraction;
             backHealthBar.color = Color.red;
@@ -45,7 +80,7 @@ public class PlayerHealth : MonoBehaviour
             percentComplete = percentComplete * percentComplete;
             backHealthBar.fillAmount = Mathf.Lerp(fillB, hFraction, percentComplete);
         }
-        if(fillF < hFraction)
+        if (fillF < hFraction)
         {
             backHealthBar.color = Color.green;
             backHealthBar.fillAmount = hFraction;
@@ -54,11 +89,16 @@ public class PlayerHealth : MonoBehaviour
             percentComplete = percentComplete * percentComplete;
             frontHealthBar.fillAmount = Mathf.Lerp(fillF, backHealthBar.fillAmount, percentComplete);
         }
+
+
     }
     public void TakeDamage(float damage)
     {
+        canRegen = false;
         health -= damage;
         lerpTimer = 0f;
+        regenCooldown = maxHealCooldown;
+        startCD = true;
     }
     public void RestoreHealth(float healAmount)
     {
