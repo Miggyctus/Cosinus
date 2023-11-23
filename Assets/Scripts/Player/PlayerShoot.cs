@@ -7,6 +7,13 @@ public class PlayerShoot : MonoBehaviour
 {
     public static Action shootInput;
     public static Action reloadInput;
+    [SerializeField] public AudioSource reloadSound;
+
+    private void Start()
+    {
+        reloadSound = GetComponent<AudioSource>();
+
+    }
     private void Update()
     {
         if(Input.GetMouseButton(0))
@@ -17,6 +24,8 @@ public class PlayerShoot : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.R))
         {
+            reloadSound.Play();
+
             reloadInput?.Invoke();
         }
     }

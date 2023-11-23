@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
         if(enemyTarget.TookDamage())
         {
             transform.LookAt(player.transform);
+            Agent.SetDestination(player.transform.position);
             enemyTarget.setDamaged(false);
         }
     }

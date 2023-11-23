@@ -7,11 +7,15 @@ public class Gun : MonoBehaviour
     [Header("References")]
     [SerializeField] GunData gunData;
     public Transform gunBarrel;
+    [SerializeField] public AudioSource shootSound;
+
     float timeSinceLastShot;
     private void Start()
     {
         PlayerShoot.shootInput += Shoot;
         PlayerShoot.reloadInput += StartReload;
+        shootSound = GetComponent<AudioSource>();
+
     }
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
 
@@ -26,6 +30,7 @@ public class Gun : MonoBehaviour
     private IEnumerator Reload()
     {
         gunData.reloading = true;
+        shootSound.Stop();
 
         yield return new WaitForSeconds(gunData.reloadTime);
         gunData.currentAmmo = gunData.magSize;
@@ -46,6 +51,7 @@ public class Gun : MonoBehaviour
                 bullet.GetComponent<Rigidbody>().velocity = shootDirection * 40;
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
+                shootSound.Play();
                 OnGunShot();
             }
         }

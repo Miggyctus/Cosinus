@@ -38,7 +38,7 @@ public class PatrolState : BaseState
                 {
                     waypointIndex = 0;
                 }
-                enemy.Agent.SetDestination(enemy.path.waypoints[waypointIndex].position);
+                enemy.Agent.SetDestination(enemy.transform.position + (Random.insideUnitSphere * 10));
                 waitTimer = 0;
             }
         }
